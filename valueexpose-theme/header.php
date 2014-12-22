@@ -13,6 +13,13 @@
 <![endif]-->
 <?php wp_head(); ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/csshorizontalmenu.css" />
+<style>.head-class{ 
+box-shadow: 0px 0px 15px #000000;
+margin-bottom: 10px;
+z-index: 9999999;
+position: relative;
+height:92px;
+}</style>
 </head>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/csshorizontalmenu.js"></script>
 <script>
@@ -94,7 +101,7 @@ wp_nav_menu(array('theme_location'=>'',
 	</script>
 	</div>
 	</div>
-	<div>
+	<div style="margin-top: -9px;">
 	<?php
 	if(is_page(34)){
 		echo do_shortcode('[rev_slider home]');
